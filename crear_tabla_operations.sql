@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS operations (
+  operation_id INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  book_id INTEGER UNSIGNED,
+  client_id INTEGER UNSIGNED,
+  `type` ENUM('V', 'P', 'D') NOT NULL COMMENT 'V = Vendido, P = Prestado, D = Devuelto',
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  update_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  finished TINYINT(1) NOT NULL COMMENT 'Si es vendido ya se detiene la operacion',
+  active TINYINT(1) NOT NULL DEFAULT 1 
+);
