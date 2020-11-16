@@ -12,6 +12,9 @@ VALUES (NULL, 'Fortunato', 'Peñaloza');
 INSERT INTO authors (`name`, nacionality) 
 VALUES ('Enrique Rincon', 'VEN'), ('Andres Gonzalez', 'VEN');
 
+INSERT INTO authors (`name`, nacionality) 
+VALUES ('Irene Garcia', 'VEN'), ('Maria Rincon', 'VEN'), ('Alberto Gonzalez', 'Ven');
+
 /*
   Formas de insertar una nueva fila:
   
